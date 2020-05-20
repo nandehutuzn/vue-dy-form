@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>vue-dy-form</title>
+    <script>
+        let func = number => {
+            if(number < 10) {
+                return number.toString();
+            }
+            let num = number % 10;
+            return num.toString() + func(Math.floor(number/10))
+        }
+        let number = 13245678;
+        console.log(func(number));
+    </script>
   </head>
   <body>
     <div id="app"></div>

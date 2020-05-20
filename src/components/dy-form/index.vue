@@ -64,6 +64,27 @@ export default {
     },
     apis: [Object, Array]
   },
+  watch: {
+      model: function(val) {
+          let ml = {};
+          createFormModelByFormItems(this.formItems, ml);
+          this.formModel = val;
+          Object.keys(ml).forEach(key => {
+            if(!(key in this.formModel)) {
+                this.$set(this.formModel, key, "")
+            }
+          })
+      },
+      formItems: function(val) {
+          let ml = {};
+          createFormModelByFormItems(val, ml);
+          Object.keys(ml).forEach(key => {
+            if(!(key in this.formModel)) {
+                this.$set(this.formModel, key, "")
+            }
+          })
+      }
+  },
   methods: {
     resetFields () {
       this.$refs.elForm.resetFields()
