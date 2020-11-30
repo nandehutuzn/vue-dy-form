@@ -3,16 +3,31 @@
 > vue 双向绑定动态表单
 
 > 使用效果图
+
 ![效果图](./assets/xiaoguotu.jpg)
 
 > 使用方法 .vue
+
 ![vue文件](./assets/helloworld-vue.jpg)
 
 > 配置方法 .js
+
 ![js配置](./assets/helloworld-js-1.jpg)
 ![js配置](./assets/helloworld-js-2.jpg)
 ![js配置](./assets/helloworld-js-3.jpg)
 ![js配置](./assets/helloworld-js-4.jpg)
+
+## 自定义组件
+
+  ![自定义组件效果图](./assets/my1.jpg)
+
+  ![自定义组件vue文件](./assets/my2.jpg)
+
+  ![自定义组件js文件](./assets/my3.jpg)
+
+  ![自定义组件js文件](./assets/my4.jpg)
+
+  ![自定义组件js文件](./assets/my5.jpg)
 
 ## Build Setup
 
