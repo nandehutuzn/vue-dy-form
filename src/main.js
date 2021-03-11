@@ -5,12 +5,18 @@ import App from './App'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import dyForm from './components/dy-form'
-// import {dyForm} from 'vue-dy-form'
+
+// 1.使用本地 dy-form
+// import dyForm from './components/dy-form'
+// Vue.component('dy-form', dyForm)
+
+// 2.使用 dy-form npm 包
+import dyForm from 'vue-dy-form'
+Vue.use(dyForm)
 
 Vue.config.productionTip = false
 Vue.use(Element)
-Vue.component('dy-form', dyForm)
+
 
 /* eslint-disable no-new */
 new Vue({
